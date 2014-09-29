@@ -1,0 +1,40 @@
+.main{
+margin-top: 100px;
+}
+.main_words{
+font-size: 15px;
+padding-left: 10px;
+padding-right: 10px;
+text-indent: 40px;
+line-height: 30px;
+}
+.vv-heading{
+  text-align: center;
+}
+.vv-heading1{
+  margin-left: 415px;
+}
+.vv-image{
+  margin-left: 613px;
+}
+.thaluk-card {
+    border: 1px solid #d7d7d7;background-color: #ffffff;display: block;position: relative;margin-bottom: 20px; margin-left: 20px; text-align: center;
+}
+.thaluk-card:hover {
+    -moz-box-shadow:    3px 3px 3px 0 #9ea1a6; -webkit-box-shadow: 3px 3px 3px 0 #9ea1a6; box-shadow: 3px 3px 3px 0 #9ea1a6;
+}
+.image-style{
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
+.thaluk-head{
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.vv{
+  margin-top: 100px;
+  margin-bottom: 100px;
+ background-color: #008B8B;
+  min-height: 350px;
+}
