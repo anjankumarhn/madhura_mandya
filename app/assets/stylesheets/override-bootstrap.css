@@ -6,7 +6,7 @@ body {
 }
 .navbar-fixed-top {
     border-bottom: 1px solid #646464;
-    background-color: #008B8B;
+    background-color: #ea6060;
 }
 .navbar-nav > li > a {
     font-size: 16px; font-family: "Titillium Web"; color: rgb( 34, 34, 34 ); text-transform: uppercase; line-height: 1.125;
@@ -14,10 +14,10 @@ body {
 
 }
 .navbar-nav > li > a:hover {
-    background-color: transparent; text-decoration: none;  border-bottom: 3px solid #ea6060;margin: 30px 25px 25px 25px;
+    background-color: transparent; text-decoration: none;  border-bottom: 3px solid white;margin: 30px 25px 25px 25px;
 }
 .navbar-nav > .active > a {
-    border-bottom: 3px solid #ea6060;margin: 30px 25px 25px 25px;
+    border-bottom: 3px solid white;margin: 30px 25px 25px 25px;
 }
 .btn {
     text-transform: uppercase;
@@ -81,10 +81,11 @@ h1 {
 .nav > li > a:hover, .nav > li > a:focus {
 
 }
-.img-responsive{
-  max-height: 150px;
-}
+
 .navbar-form{
   padding-top: 20px;
   padding-right: 15px;
+}
+.col-sm-6{
+  width: 450px;
 }
