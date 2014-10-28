@@ -1,0 +1,23 @@
+.thaluk-image{
+  height:300px;
+  width:350px;
+}
+.sp-icon{
+height: 250px;
+width: 350px;
+}
+.sp-icons{
+  padding-left: 50px;
+  text-align: center;
+}
+.fam-col{
+ margin-left: 100px;
+ text-align: center;
+ margin-bottom: 150px;
+}
+.fam-col-row, .fam-col-td{
+border: 1px solid black;
+height: 50px;
+padding-left: 5px;
+padding-right: 5px;
+}

@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  get 'mandya/thaluk'
+  get 'mandya/mandya_thaluk'
+  get 'mandya/famous_college'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
