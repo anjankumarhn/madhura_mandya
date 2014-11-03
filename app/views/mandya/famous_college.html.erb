@@ -1,99 +1,11 @@
 <div class="mandya-main">
-  <h2 class="fam-col-head">Colleges in Mandya</h2>
-  <table class="fam-col">
-    <tr class="fam-col-row">
-      <td class="fam-col-td"><strong>College Name</strong></td>
-      <td class="fam-col-td"><strong>College Address</strong></td>
-      <td class="fam-col-td"><strong>View details</strong></td>
-    </tr>
-    <tr>
-      <td class="fam-col-td"><strong>Mandya Institute of Medical Science</strong></td>
-      <td class="fam-col-td">Mandya Institute of Medical Sciences,
-        Bangalore-Mysore Road,
-        Mandya - 571 401,
-        Karnataka State,
-        INDIA.</td>
-        <td class="fam-col-td"><a href="http://www.mimsmandya.org/" class="btn btn-primary">View details</a></td>
-      </tr>
-      <tr class="fam-col-row">
-        <td class="fam-col-td"><strong>P.E.S College of Engineering</strong></td>
-        <td class="fam-col-td">P.E.S.College Of Engineering
-          Mandya - 571 401, Karnataka, INDIA.
-          + Phone : +91 8232 220043
-          + Fax: +91 8232 222075
-          Email: principal@pesce.ac.in</td>
-          <td class="fam-col-td"><a href="http://www.pescemandya.org/" class="btn btn-primary">View details</a></td>
-        </tr>
-        <tr class="fam-col-row">
-          <td class="fam-col-td"><strong>P.E.S College of Engineering(M.B.A)</strong></td>
-          <td class="fam-col-td">P.E.S.College Of Engineering
-            Mandya - 571 401, Karnataka, INDIA.
-            + Phone : 08232 220043
-            + Fax: +91 8232 222075
-            Email: principal@pesce.ac.in</td>
-            <td class="fam-col-td"><a href="http://www.minglebox.com/college/P-E-S-College-of-Engineering-Mandya/course/Master-of-Business-Administration-MBA" class="btn btn-primary">View details</a></td>
-          </tr>
-          <tr class="fam-col-row">
-            <td class="fam-col-td"><strong>P.E.S. College of Science, Mandya
-            </strong></td>
-            <td class="fam-col-td">P.E.S.College Of Engineering
-              Mandya - 571 401, Karnataka, INDIA.
-              + Phone : +91-08232-220252, +91-08232-224176
-              Email: principal@pesmandya.org</td>
-              <td class="fam-col-td"><a href="http://www.minglebox.com/college/P-E-S-College-of-Science-Mandya" class="btn btn-primary">View details</a></td>
-            </tr>
-            <tr class="fam-col-row">
-              <td class="fam-col-td"><strong>Sir M. Visvesvaraya Postgraduate Centre, Mandya
-              </strong></td>
-              <td class="fam-col-td">Sir M. Visvesvaraya Postgraduate Centre
-                Tubinakere,
-                Mandya, Karnataka, INDIA.
-                + Phone : +91-08232-291112, (M)+919964173700
-                Email: chandraju1@yahoo.com</td>
-                <td class="fam-col-td"><a href="http://www.uni-mysore.ac.in/sir-m-visvesvaraya-postgraduate-centre-mandya/" class="btn btn-primary">View details</a></td>
-              </tr>
+<% if current_admin.present? %>
+<button class="btn btn-primary btn-college" type="button" data-toggle="modal" data-target="#myModal">ADD COLLEGES</button>
+<%= render :partial => "famous_college" %>
+<% else %>
+<%= render :partial => "famous_college" %>
+<% end %>
 
-              <tr class="fam-col-row">
-                <td class="fam-col-td"><strong>Cauvery Institute of Technology
-                </strong></td>
-                <td class="fam-col-td">Cauvery Institute of Technology,
-                  Sundahalli,
-                  Mandya - 571402, Karnataka, INDIA.
-                  + Phone : +919620228137
-                  Email: info@cauveryinstitute.com</td>
-                  <td class="fam-col-td"><a href="http://www.cauveryinstitute.com/" class="btn btn-primary">View details</a></td>
-                </tr>
-
-                <tr class="fam-col-row">
-                  <td class="fam-col-td"><strong>Mandavya First Grade College Mandya
-                  </strong></td>
-                  <td class="fam-col-td">Mandavya First Grade College,
-                    MC Road, Mandya  571 403, Karnataka, INDIA.
-                    + Phone : (08232) 230126
-                  </td>
-                  <td class="fam-col-td"><a href="http://sbetrust.org/index.php?option=com_content&view=article&id=56&Itemid=62" class="btn btn-primary">View details</a></td>
-                </tr>
-
-                <tr class="fam-col-row">
-                  <td class="fam-col-td"><strong>Government College (Autonomous) Mandya
-                  </strong></td>
-                  <td class="fam-col-td">Government College (Autonomous),
-                    MC Road, Manya-571401, Karnataka, INDIA.
-                    Tele Fax :08232-220039, Email: info@gcm.ac.in, ppgov1-cce-kama@kar.nic.in
-                  </td>
-                  <td class="fam-col-td"><a href="http://www.gcm.ac.in/" class="btn btn-primary">View details</a></td>
-                </tr>
-
-                <tr class="fam-col-row">
-                  <td class="fam-col-td"><strong>Government College For Women Mandya
-                  </strong></td>
-                  <td class="fam-col-td">Government College For Women,
-                    MC Road, Manya-571401, Karnataka, INDIA.
-                    + Phone: 08232-220104
-                  </td>
-                  <td class="fam-col-td"><a href="http://www.gcwm.in/" class="btn btn-primary">View details</a></td>
-                </tr>
- </table>
 
  <%= link_to 'BACK',  mandya_mandya_thaluk_path, :class =>"btn btn-primary btn-lg" %>
             </div>

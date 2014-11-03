@@ -17,6 +17,7 @@
  *= require home
  *= require about
  *= require thaluk
+ *= require admin
  *= require_tree .
  *= require_self
  */

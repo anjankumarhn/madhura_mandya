@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'mandya/thaluk'
   get 'mandya/mandya_thaluk'
   get 'mandya/famous_college'
+  get 'thaluk/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -18,6 +19,15 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
      resources :mandya
+     resources :colleges
+
+
+     #Admin routes
+
+  get     'admin/sign_in'         => "admin/sessions#sign_in",         :as => :admin_sign_in
+  post    'admin/create_session'  => "admin/sessions#create_session",  :as => :admin_create_session
+  delete  'admin/sign_out'        => "admin/sessions#sign_out",        :as => :admin_sign_out
+  get     'admin/home'           => "welcome#index",                :as => :admin_home
 
   # Example resource route with options:
   #   resources :products do

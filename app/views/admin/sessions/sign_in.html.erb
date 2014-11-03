@@ -1,0 +1,21 @@
+<div class="sign_in">
+  <div class="sign_in_head"><h3 class="sign_in_logo">ಮಧುರ ಮಂಡ್ಯ - Login as admin</h3></div>
+  <%= form_tag admin_create_session_path, :role=>"form", :autocomplete => :off do %>
+
+
+
+  <div class="form-group mt-30">
+    <label for="sign_in_login_handle", class="label_name">Email address</label>
+    <%= text_field_tag :login_handle, params[:login_handle], :placeholder=> "Enter Username / Emails", :name => "login_handle", :class=>"form-control", id: "sign_in_login_handle" %>
+  </div>
+  <div class="form-group">
+    <label for="sign_in_password", class="label_name">Password</label>
+    <%= password_field_tag :password, '', :placeholder=> "Enter Password", :name => "password", :class=>"form-control", id: "sign_in_password" %>
+  </div>
+
+  <%= submit_tag "Sign in", :class => "btn btn-primary pull-right sign_button" %>
+<% end %>
+
+
+
+</div>

@@ -9,6 +9,9 @@
 <body>
 <%= render :partial => "layouts/header" %>
 <%= yield %>
+<div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+    <%= render :partial => "colleges/new" %>
+  </div>
 <%= render :partial => "layouts/footer" %>
 
 </body>

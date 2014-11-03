@@ -1,0 +1,46 @@
+.sign_in{
+margin-left: 350px;
+margin-top: 100px;
+height: 350px;
+width: 500px;
+border-left: 1px solid grey;
+border-right: 1px solid grey;
+border-bottom: 1px solid grey;
+border-radius: 5px;
+}
+.sign_in_logo{
+margin-left: 25px;
+color: white;
+padding-top: 25px;
+}
+.sign_in_head{
+height: 70px;
+background-color: #428bca;
+width: 500px;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+margin-bottom: 50px;
+margin-top: 0px;
+}
+.form-control{
+  width:400px;
+  margin-left: 50px;
+}
+.label_name{
+margin-left: 50px;
+}
+.sign_button{
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.pop_new{
+margin-left: 350px;
+margin-top: 30px;
+height: 600px;
+width: 500px;
+border-left: 1px solid grey;
+border-right: 1px solid grey;
+border-bottom: 1px solid grey;
+border-radius: 5px;
+background-color: white;
+}

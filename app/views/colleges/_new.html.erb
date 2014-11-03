@@ -1,0 +1,36 @@
+<div class="pop_new">
+<div class="sign_in_head"><h3 class="sign_in_logo">ಮಧುರ ಮಂಡ್ಯ - Add College</h3></div>
+<div class="form-align">
+<%= form_for :college, :url => colleges_path, :method =>'post' do |f| %>
+
+<div class="form-group">
+  <%= f.text_field :name, :id=>"name",:class=>"form-control", :placeholder=>" Name"%>
+      <label class="error" id="label_error" for="name"> </label>
+
+      <%= f.text_area :address, :id=>"address",:class=>"form-control", :placeholder=>"Enter address here"%>
+      <label class="error" id="label_error" for="address"> </label>
+
+      <%= f.select :thaluk_id, get_course, {},:id=>"thaluk_id",:class=>"form-control"%>
+       <label class="error" id="label_error" for="thaluk_id"> </label>
+
+  <%= f.text_field :email, :id=>"email",:class=>"form-control", :placeholder=>"E-mail"%>
+       <label class="error" id="label_error" for="email"> </label>
+
+       <%= f.text_field :phone, :id=>"phone",:class=>"form-control", :placeholder=>"Enter phone number here"%>
+      <label class="error" id="label_error" for="phone"> </label>
+
+      <%= f.text_field :mobile_number, :id=>"mobile_number",:class=>"form-control", :placeholder=>"Enter your mobile_number"%>
+      <label class="error" id="label_error" for="mobile_number"> </label>
+
+      <%= f.text_field :link, :id=>"link",:class=>"form-control", :placeholder=>"Add reference link address here"%>
+      <label class="error" id="label_error" for="link"> </label>
+
+
+      <div class="col-6 col-sm-offset-0">
+      <%= f.submit "ADD COLLEGE", :class=>"btn btn-primary pull-right sign_button" %>
+
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>

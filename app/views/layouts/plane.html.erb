@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <title>Madhura Mandya</title>
+  <%= stylesheet_link_tag "application", :media => "all" -%>
+  <%= csrf_meta_tags -%>
+</head>
+<body>
+  <%= yield %>
+  <script type='text/javascript'>
+  <%= yield :javascript -%>
+  </script>
+
+</body>
+</html>

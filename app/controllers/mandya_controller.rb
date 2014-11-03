@@ -3,6 +3,7 @@ class MandyaController < ApplicationController
   end
 
   def thaluk
+    @thaluks = Thaluk.all
   end
 
   def mandya_thaluk
