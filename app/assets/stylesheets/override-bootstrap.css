@@ -6,7 +6,7 @@ body {
 }
 .navbar-fixed-top {
     border-bottom: 1px solid #646464;
-    background-color: #7FFFD4;
+    background-color: #428bca;
 }
 .navbar-nav > li > a {
     font-size: 16px; font-family: "Titillium Web"; color: rgb( 34, 34, 34 ); text-transform: uppercase; line-height: 1.125;
